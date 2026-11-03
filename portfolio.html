@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Laporan Tahunan - PT Krakatau Steel</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Laporan Tahunan PT Krakatau Steel" name="keywords">
+        <meta content="Laporan Tahunan dan Keberlanjutan PT Krakatau Steel tahun 2023, 2024, dan 2025." name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet"> 
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            .portfolio .portfolio-report-cover {
+                width: 100%;
+                height: 430px;
+                object-fit: contain;
+                padding: 12px;
+                background: #f4f6f9;
+            }
+            .portfolio .portfolio-text h3 {
+                text-align: left;
+                font-size: 18px;
+                white-space: normal;
+                line-height: 1.25;
+            }
+            .portfolio .portfolio-warp a.report-open {
+                flex: 0 0 60px;
+                font-size: 23px;
+                padding: 0;
+            }
+            .report-intro {
+                max-width: 760px;
+                margin: -5px auto 28px;
+                color: #666;
+                text-align: center;
+            }
+            #reportViewerModal .modal-dialog {
+                width: 96%;
+                max-width: 1400px;
+                margin: 1.5rem auto;
+            }
+            #reportViewerModal .modal-content {
+                height: 92vh;
+                border: 0;
+                border-radius: 4px;
+                overflow: hidden;
+            }
+            #reportViewerModal .modal-header {
+                align-items: center;
+                background: #030f27;
+                color: #fff;
+                border-bottom: 3px solid #fdbe33;
+            }
+            #reportViewerModal .modal-title {
+                color: #fff;
+                font-size: 18px;
+                font-weight: 600;
+            }
+            #reportViewerModal .close {
+                color: #fff;
+                opacity: 1;
+                text-shadow: none;
+            }
+            #reportViewerModal .modal-body {
+                padding: 0;
+                overflow: hidden;
+                background: #e9edf2;
+            }
+            #reportPdfFrame {
+                display: block;
+                width: 100%;
+                height: calc(92vh - 68px);
+                border: 0;
+                background: #fff;
+            }
+            .report-open-new-tab {
+                margin-right: 12px;
+                color: #030f27;
+                background: #fdbe33;
+                border: 0;
+                border-radius: 0;
+                font-weight: 600;
+            }
+            .report-open-new-tab:hover {
+                color: #fdbe33;
+                background: #18243a;
+            }
+            @media (max-width: 767.98px) {
+                .portfolio .portfolio-report-cover { height: 360px; }
+                #reportViewerModal .modal-dialog { width: 100%; margin: 0; }
+                #reportViewerModal .modal-content { height: 100vh; border-radius: 0; }
+                #reportPdfFrame { height: calc(100vh - 68px); }
+                #reportViewerModal .modal-title { font-size: 14px; }
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <!-- Top Bar Start -->
+            <div class="top-bar">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 col-md-12">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <h1>Kutau</h1>
+                                    <!-- <img src="img/logo.jpg" alt="Logo"> -->
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-7 d-none d-lg-block">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="top-bar-item">
+                                        <div class="top-bar-icon">
+                                            <i class="flaticon-calendar"></i>
+                                        </div>
+                                        <div class="top-bar-text">
+                                            <h3>Jam Buka</h3>
+                                            <p>Senin - Jum'at, 8:45 - 16:45</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="top-bar-item">
+                                        <div class="top-bar-icon">
+                                            <i class="flaticon-call"></i>
+                                        </div>
+                                        <div class="top-bar-text">
+                                            <h3>Hubungi Kami</h3>
+                                            <p>+012 345 6789</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="top-bar-item">
+                                        <div class="top-bar-icon">
+                                            <i class="flaticon-send-mail"></i>
+                                        </div>
+                                        <div class="top-bar-text">
+                                            <h3>Email Kami</h3>
+                                            <p>krakatausteel@gmail.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Top Bar End -->
+
+            <!-- Nav Bar Start -->
+            <div class="nav-bar">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                        <a href="#" class="navbar-brand">MENU</a>
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav mr-auto">
+                                <a href="index.html" class="nav-item nav-link">Laman Utama</a>
+                                <a href="about.html" class="nav-item nav-link">Tentang Kami</a>
+                                <a href="service.html" class="nav-item nav-link">Produk</a>
+                                <a href="team.html" class="nav-item nav-link">Struktur Perusahaan</a>
+                                <a href="portfolio.html" class="nav-item nav-link active">Laporan Tahunan</a>
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
+                                    <div class="dropdown-menu">
+                                        <a href="blog.html" class="dropdown-item">Berita</a>
+                                        <a href="single.html" class="dropdown-item">Berita Terkini</a>
+                                    </div>
+                                </div>
+                                <a href="contact.html" class="nav-item nav-link">Kontak</a>
+                            </div>
+                            <div class="ml-auto">
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- Nav Bar End -->
+            
+            
+            <!-- Page Header Start -->
+            <div class="page-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>Laporan Tahunan</h2>
+                        </div>
+                        <div class="col-12">
+                            <a href="index.html">Laman Utama</a>
+                            <a href="">Laporan Tahunan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Page Header End -->
+
+
+            <!-- Annual Reports Start -->
+            <div class="portfolio">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <p>Publikasi Perusahaan</p>
+                        <h2>Laporan dan Kinerja Perusahaan</h2>
+                    </div>
+                    <p class="report-intro">
+                        Pilih tahun laporan untuk membaca informasi kinerja, perkembangan usaha,
+                        tata kelola, dan keberlanjutan PT Krakatau Steel. Dokumen akan ditampilkan
+                        langsung di halaman ini.
+                    </p>
+                    <div class="row">
+                        <div class="col-12">
+                            <ul id="portfolio-flters">
+                                <li data-filter="*" class="filter-active">Semua</li>
+                                <li data-filter=".first">2025</li>
+                                <li data-filter=".second">2024</li>
+                                <li data-filter=".third">2023</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row portfolio-container">
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="portfolio-warp">
+                                <div class="portfolio-img">
+                                    <img class="portfolio-report-cover" src="img/laporan-2025-cover.jpg" alt="Sampul Laporan Tahunan dan Keberlanjutan PT Krakatau Steel 2025">
+                                    <div class="portfolio-overlay">
+                                        <p>Laporan tahun 2025 bertema “Driving Performance through Transformation” yang memuat kinerja operasional, keuangan, tata kelola, dan keberlanjutan Perseroan.</p>
+                                    </div>
+                                </div>
+                                <div class="portfolio-text">
+                                    <h3>Laporan Tahunan 2025</h3>
+                                    <a class="btn report-open" href="#" data-toggle="modal" data-target="#reportViewerModal" data-pdf="laporan/laporan-tahunan-2025.pdf" data-title="Laporan Tahunan dan Keberlanjutan 2025" aria-label="Buka laporan tahunan 2025" title="Baca laporan 2025"><i class="fas fa-book-open"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item second wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="portfolio-warp">
+                                <div class="portfolio-img">
+                                    <img class="portfolio-report-cover" src="img/laporan-2024-cover.jpg" alt="Sampul Laporan Tahunan dan Keberlanjutan PT Krakatau Steel 2024">
+                                    <div class="portfolio-overlay">
+                                        <p>Laporan tahun 2024 bertema “Kolaborasi dan Transformasi Perkuat Keberlanjutan”, yang menjelaskan kinerja dan langkah transformasi Perseroan.</p>
+                                    </div>
+                                </div>
+                                <div class="portfolio-text">
+                                    <h3>Laporan Tahunan 2024</h3>
+                                    <a class="btn report-open" href="#" data-toggle="modal" data-target="#reportViewerModal" data-pdf="laporan/laporan-tahunan-2024.pdf" data-title="Laporan Tahunan dan Laporan Keberlanjutan 2024" aria-label="Buka laporan tahunan 2024" title="Baca laporan 2024"><i class="fas fa-book-open"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item third wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="portfolio-warp">
+                                <div class="portfolio-img">
+                                    <img class="portfolio-report-cover" src="img/laporan-2023-cover.jpg" alt="Sampul Laporan Tahunan PT Krakatau Steel 2023">
+                                    <div class="portfolio-overlay">
+                                        <p>Laporan tahun 2023 bertema “Mengatasi Tantangan dan Siap Bangkit Kembali”, yang merangkum kinerja dan upaya pemulihan Perseroan.</p>
+                                    </div>
+                                </div>
+                                <div class="portfolio-text">
+                                    <h3>Laporan Tahunan 2023</h3>
+                                    <a class="btn report-open" href="#" data-toggle="modal" data-target="#reportViewerModal" data-pdf="laporan/laporan-tahunan-2023.pdf" data-title="Laporan Tahunan dan Keberlanjutan 2023" aria-label="Buka laporan tahunan 2023" title="Baca laporan 2023"><i class="fas fa-book-open"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Annual Reports End -->
+
+            <!-- PDF Viewer Modal Start -->
+            <div class="modal fade" id="reportViewerModal" tabindex="-1" role="dialog" aria-labelledby="reportViewerTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="reportViewerTitle">Laporan Tahunan</h5>
+                            <div class="d-flex align-items-center">
+                                <a id="openReportNewTab" class="btn btn-sm report-open-new-tab" href="#" target="_blank" rel="noopener noreferrer">Buka di Tab Baru</a>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Tutup">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <iframe id="reportPdfFrame" src="about:blank" title="Pratinjau PDF Laporan Tahunan"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- PDF Viewer Modal End -->
+
+
+            <!-- Footer Start -->
+            <div class="footer wow fadeIn" data-wow-delay="0.3s">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-contact">
+                                <h2>Kontak Kantor</h2>
+                               <p>
+    <i class="fa fa-map-marker-alt"></i>
+    <a href="https://maps.app.goo.gl/bndfQJQ7ya6FSc5C6"
+       target="_blank"
+       rel="noopener noreferrer">
+       PT Krakatau Steel, Cilegon, Banten
+    </a>
+</p>
+                                <p><i class="fa fa-phone-alt"></i>+012 345 67890</p>
+                                <p><i class="fa fa-envelope"></i>krakatausteel@gmail.com</p>
+                                <div class="footer-social">
+                                    <a href="https://x.com/_krakatausteel"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.facebook.com/krakatausteelofficial"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://youtu.be/pQpBP32aEt4?si=clHkrDfRB2g0FMMq"><i class="fab fa-youtube"></i></a>
+                                    <a href="https://www.instagram.com/krakatau.steel/"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-link">
+                                <h2>Produk Unggulan</h2>
+                                <a href="">Hot Rolled Coil</a>
+                                <a href="">Cold Rolled Coil</a>
+                                <a href="">Wire Rod</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-link">
+                                <h2>Useful Pages</h2>
+                                <a href="">Tentang Kami</a>
+                                <a href="">Kontak</a>
+                                <a href="">Struktur Perusahaan</a>
+                                <a href="portfolio.html">Laporan Tahunan</a>
+                                <a href="">Testimoni</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="newsletter">
+                                <h2>Informasi Terbaru</h2>
+                                <p>
+                                    Dapatkan informasi terbaru seputar produk, kegiatan, dan perkembangan PT Krakatau Steel
+                                </p>
+                                <div class="form">
+                                    <input class="form-control" placeholder="Email here">
+                                    <button class="btn">Kirim</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container footer-menu">
+                    <div class="f-menu">
+                        <a href="">Terms of use</a>
+                        <a href="">Privacy policy</a>
+                        <a href="">Cookies</a>
+                        <a href="">Help</a>
+                        <a href="">FQAs</a>
+                    </div>
+                </div>
+                <div class="container copyright">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>&copy; <a href="#">Kutau</a>, All Right Reserved.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End -->
+
+            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        </div>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/slick/slick.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <script>
+            $(function () {
+                $('#reportViewerModal').on('show.bs.modal', function (event) {
+                    var trigger = $(event.relatedTarget);
+                    var pdfPath = trigger.data('pdf');
+                    var reportTitle = trigger.data('title');
+                    $('#reportViewerTitle').text(reportTitle || 'Laporan Tahunan');
+                    $('#reportPdfFrame').attr('src', pdfPath || 'about:blank');
+                    $('#openReportNewTab').attr('href', pdfPath || '#');
+                });
+
+                $('#reportViewerModal').on('hidden.bs.modal', function () {
+                    $('#reportPdfFrame').attr('src', 'about:blank');
+                });
+
+                $('.report-open').on('click', function (event) {
+                    event.preventDefault();
+                });
+            });
+        </script>
+
+    </body>
+</html>
