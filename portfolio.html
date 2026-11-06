@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Laporan Tahunan - PT Krakatau Steel</title>
+        <title>PT Krakatau Steel (Persero) Tbk</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Laporan Tahunan PT Krakatau Steel" name="keywords">
         <meta content="Laporan Tahunan dan Keberlanjutan PT Krakatau Steel tahun 2023, 2024, dan 2025." name="description">
@@ -108,6 +108,45 @@
                 #reportPdfFrame { height: calc(100vh - 68px); }
                 #reportViewerModal .modal-title { font-size: 14px; }
             }
+            
+/* Mengatur posisi kartu laporan */
+.portfolio-container {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    margin: 0 !important;
+}
+
+/* Menghilangkan batas kolom Bootstrap */
+.portfolio-container .portfolio-item {
+    width: auto !important;
+    max-width: none !important;
+    flex: initial !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Menyamakan tampilan kartu */
+.portfolio-container .portfolio-warp {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+}
+
+/* Tampilan tablet */
+@media (max-width: 767.98px) {
+    .portfolio-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Tampilan HP */
+@media (max-width: 575.98px) {
+    .portfolio-container {
+        grid-template-columns: 1fr;
+    }
+}
+
         </style>
 
     </head>
@@ -121,7 +160,7 @@
                         <div class="col-lg-4 col-md-12">
                             <div class="logo">
                                 <a href="index.html">
-                                    <h1>Kutau</h1>
+                                    <h1>PT Krakatau Steel</h1>
                                     <!-- <img src="img/logo.jpg" alt="Logo"> -->
                                 </a>
                             </div>
@@ -191,6 +230,8 @@
                                         <a href="single.html" class="dropdown-item">Berita Terkini</a>
                                     </div>
                                 </div>
+                                  <a href="testimoni.html" class="nav-item nav-link">Testimoni</a>
+                                <a href="FAQs.html" class="nav-item nav-link">FAQs</a>                              
                                 <a href="contact.html" class="nav-item nav-link">Kontak</a>
                             </div>
                             <div class="ml-auto">
@@ -242,7 +283,7 @@
                         </div>
                     </div>
                     <div class="row portfolio-container">
-                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="col-lg-4 col-md-4 col-sm-12 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
                             <div class="portfolio-warp">
                                 <div class="portfolio-img">
                                     <img class="portfolio-report-cover" src="img/laporan-2025-cover.jpg" alt="Sampul Laporan Tahunan dan Keberlanjutan PT Krakatau Steel 2025">
@@ -257,7 +298,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item second wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="col-lg-4 col-md-4 col-sm-12 portfolio-item second wow fadeInUp" data-wow-delay="0.2s">
                             <div class="portfolio-warp">
                                 <div class="portfolio-img">
                                     <img class="portfolio-report-cover" src="img/laporan-2024-cover.jpg" alt="Sampul Laporan Tahunan dan Keberlanjutan PT Krakatau Steel 2024">
@@ -272,7 +313,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item third wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="col-lg-4 col-md-4 col-sm-12 portfolio-item third wow fadeInUp" data-wow-delay="0.3s">
                             <div class="portfolio-warp">
                                 <div class="portfolio-img">
                                     <img class="portfolio-report-cover" src="img/laporan-2023-cover.jpg" alt="Sampul Laporan Tahunan PT Krakatau Steel 2023">
@@ -341,19 +382,19 @@
                         <div class="col-md-6 col-lg-3">
                             <div class="footer-link">
                                 <h2>Produk Unggulan</h2>
-                                <a href="">Hot Rolled Coil</a>
-                                <a href="">Cold Rolled Coil</a>
-                                <a href="">Wire Rod</a>
+                                <a href="service.html">Hot Rolled Coil</a>
+                                <a href="service.html">Cold Rolled Coil</a>
+                                <a href="service.html">Wire Rod</a>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-3">
                             <div class="footer-link">
-                                <h2>Useful Pages</h2>
-                                <a href="">Tentang Kami</a>
-                                <a href="">Kontak</a>
-                                <a href="">Struktur Perusahaan</a>
+                                <h2>Kenal kami lebih dekat</h2>
+                                <a href="about.html">Tentang Kami</a>
+                                <a href="contact.html">Kontak</a>
+                                <a href="team.html">Struktur Perusahaan</a>
                                 <a href="portfolio.html">Laporan Tahunan</a>
-                                <a href="">Testimoni</a>
+                                <a href="testimoni.html">Testimoni</a>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-3">
@@ -363,7 +404,7 @@
                                     Dapatkan informasi terbaru seputar produk, kegiatan, dan perkembangan PT Krakatau Steel
                                 </p>
                                 <div class="form">
-                                    <input class="form-control" placeholder="Email here">
+                                    <input class="form-control" placeholder="Email disini">
                                     <button class="btn">Kirim</button>
                                 </div>
                             </div>
@@ -372,20 +413,20 @@
                 </div>
                 <div class="container footer-menu">
                     <div class="f-menu">
-                        <a href="">Terms of use</a>
-                        <a href="">Privacy policy</a>
-                        <a href="">Cookies</a>
-                        <a href="">Help</a>
-                        <a href="">FQAs</a>
+                        <a href="">Ketentuan Penggunaan</a>
+                        <a href="">Kebijakan Privasi</a>
+                        <a href="">Cookie</a>
+                        <a href="contact.html">Bantuan</a>
+                        <a href="FAQs.html">FAQs</a>
                     </div>
                 </div>
                 <div class="container copyright">
                     <div class="row">
                         <div class="col-md-6">
-                            <p>&copy; <a href="#">Kutau</a>, All Right Reserved.</p>
+                            <p>&copy; <a href="#">PT Krakatau Steel</a>, Hak Cipta Dilindungi.</p>
                         </div>
                         <div class="col-md-6">
-                            <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
+                            <p>Desain oleh <a href="https://htmlcodex.com">Kelompok F1</a></p>
                         </div>
                     </div>
                 </div>
@@ -432,3 +473,4 @@
 
     </body>
 </html>
+

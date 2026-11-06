@@ -100,19 +100,34 @@
         }
     });
     
-    
-    // Portfolio isotope and filter
-    var portfolioIsotope = $('.portfolio-container').isotope({
-        itemSelector: '.portfolio-item',
-        layoutMode: 'fitRows'
+
+
+// Filter laporan tahunan
+$('#portfolio-flters li').on('click', function () {
+    var filterValue = $(this).attr('data-filter');
+
+    $('#portfolio-flters li').removeClass('filter-active');
+    $(this).addClass('filter-active');
+
+    var items = $('.portfolio-container .portfolio-item');
+
+    // Tampilkan atau sembunyikan laporan
+    items.each(function () {
+        if (filterValue === '*' || $(this).is(filterValue)) {
+            $(this).show();
+        } else {
+            $(this).hide();
+        }
     });
 
-    $('#portfolio-flters li').on('click', function () {
-        $("#portfolio-flters li").removeClass('filter-active');
-        $(this).addClass('filter-active');
+    // Hitung laporan yang tampil
+    var visibleItems = items.filter(':visible').length;
 
-        portfolioIsotope.isotope({filter: $(this).data('filter')});
-    });
-    
+    // Jika hanya satu laporan, posisikan di tengah
+    if (visibleItems === 1) {
+        $('.portfolio-container').addClass('single-result');
+    } else {
+        $('.portfolio-container').removeClass('single-result');
+    }
+});
 })(jQuery);
-
